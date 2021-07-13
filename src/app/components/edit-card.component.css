@@ -1,0 +1,57 @@
+:host{
+  width:90%;
+  max-width: 900px;
+}
+
+input{
+  width:100%;
+  box-sizing: border-box;
+}
+
+.btn-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.red{
+  background-color:lightcoral;
+  border: 1px solid red;
+}
+
+.blue{
+  background-color:skyblue;
+  border: 1px solid #1976d2;
+}
+
+button{
+  height:40px;
+  width: 100px;
+}
+
+.blue:hover{
+  background-color: cornflowerblue;
+}
+
+.blue:active{
+  background-color: dodgerblue;
+}
+
+.red:hover{
+  background-color: coral;
+}
+
+.red:active{
+  background-color: crimson;
+}
+
+textarea{
+  width:100%;
+  height: 100px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.ml-auto{
+  margin-left: auto;
+}

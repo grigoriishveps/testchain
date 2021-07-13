@@ -1,0 +1,55 @@
+.card-wrapper{
+  width: 200px;
+  margin: 0px 10px;
+}
+
+.card-wrapper h4{
+  text-align: center;
+  text-overflow: clip;
+  height:19px;
+  overflow: hidden;
+}
+
+.card-content{
+  border: 1px solid black;
+  height: 110px;
+  padding: 10px;
+}
+.card-content div{
+  /*display: flex;*/
+
+  word-wrap: anywhere;
+
+  /*text-overflow: ellipsis;*/
+  /*margin: 0;*/
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  line-height: 1.3em;
+}
+.card-wrapper button{
+  margin-top: 10px;
+  width:100%;
+}
+
+
+
+button{
+  /*background-color: cornflowerblue;*/
+  background-color: skyblue;
+  border: 1px solid #1976d2;
+  border-radius: 6px;
+}
+button:hover{
+  background-color: cornflowerblue;
+}
+
+button:active{
+  background-color: dodgerblue;
+}
+
+:host{
+  display:flex;
+  justify-content: center;
+}

@@ -1,0 +1,13 @@
+
+<div>
+  <button class="blue" (click)="toBack()">Вернуться назад</button>
+  <h5>Заголовок</h5>
+  <input type="text" [(ngModel)]="title"/>
+  <h5>Контент</h5>
+  <textarea [(ngModel)]="content" ></textarea>
+  <div class="btn-wrapper">
+    <button class="red" (click)="openModal()" *ngIf="isEdit">Удалить</button>
+    <button class="blue mr-auto" (click)="saveCard()">Сохранить</button>
+  </div>
+  <modal *ngIf="isEdit && open " (isConfirmed)="closeModal($event)"></modal>
+</div>

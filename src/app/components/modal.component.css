@@ -1,0 +1,104 @@
+/*:host {*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  left: 0;*/
+/*  overflow: hidden;*/
+/*  overflow-y: auto;*/
+/*  -webkit-overflow-scrolling: touch;*/
+/*  display: flex;*/
+/*  flex-flow: column nowrap;*/
+/*  justify-content: center; !* см. ниже *!*/
+/*  align-items: center;*/
+/*  z-index: 99;*/
+/*  !* Чтобы окно не прилипало к границе*/
+/*  браузера установим отступы *!*/
+/*  padding:30px 0;*/
+/*}*/
+
+.hystmodal__window {
+  background: #fff;
+
+  /* Установим по умолчанию ширину 600px
+  но она будет не больше ширины браузера */
+  width: 600px;
+  max-width: 100%;
+
+  /* Заготовка для будущих анимаций */
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transform: scale(1);
+}
+
+.modal-background {
+  position         : absolute;
+  display          : flex;
+  justify-content  : center;
+  align-items      : center;
+  z-index          : 9999;
+  left             : 0;
+  right            : 0;
+  top              : 0;
+  bottom           : 0;
+  background-color : rgba(0, 0, 0, 0.6);
+}
+
+.modal-background:hover {
+  background-color : rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  position        : relative;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : flex-start;
+  width           : 250px;
+  border-radius   : 5px;
+  border          : gray solid 1px;
+  background      : white;
+  color           : black;
+  margin-bottom   : 15px;
+  padding-bottom  : 10px;
+  text-align: center;
+}
+
+.content {
+  color      : #000000;
+  padding    : 1rem;
+}
+
+.action-block {
+  display         : flex;
+  justify-content : space-around;
+}
+
+.red{
+  background-color:lightcoral;
+  border: 1px solid red;
+}
+
+.blue{
+  background-color:skyblue;
+  border: 1px solid #1976d2;
+}
+
+button{
+  height:30px;
+  width: 50px;
+}
+
+.blue:hover{
+  background-color: cornflowerblue;
+}
+
+.blue:active{
+  background-color: dodgerblue;
+}
+
+.red:hover{
+  background-color: coral;
+}
+
+.red:active{
+  background-color: crimson;
+}
